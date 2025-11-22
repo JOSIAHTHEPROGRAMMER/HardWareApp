@@ -95,18 +95,15 @@ HardWareApp/
 
 ## 🖼 Screenshots
 
+| 🔑 Login Screen | 📦 Items Management | 👥 Customers |
+|-----------------|------------------|-------------|
+| ![Login Screen](images/login-screen.jpg) | ![Items Screen](images/items-screen.jpg) | ![Customers Screen](images/Customers-screen.jpg) |
 
-🔑 Login Screen
+| 🗂 Categories | 💵 Billing |
+|---------------|------------|
+| ![Categories Screen](images/categories-screen.jpg) | ![Billing Screen](images/Billing-screen.jpg) |
 
-📦 Items Management
-
-👥 Customers
-
-🗂 Categories
-
-💵 Billing
-
-🚀 Splash
+----
 
 ## 🐳 Running With Docker
 
