@@ -48,7 +48,7 @@ The project includes Docker support, allowing automatic SQL Server setup and dat
 
 ### 👥 Customer Management
 - Full CRUD customer table
-- Integrated search support
+
 
 ### 🗂 Categories Module
 - Manage item categories
