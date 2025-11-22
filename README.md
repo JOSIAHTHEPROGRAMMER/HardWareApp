@@ -124,22 +124,22 @@ Launch the application locally via Visual Studio
 
 Create a `.env` file in the project root (ignored by Git):
 
-### `.env` File 1 (Application Folder)(Can change if you want)
+### `.env` File 1 (Application Folder)
 ```
-DB_SERVER=localhost,1433
-DB_NAME=HardwareDB
+DB_SERVER=DB_SERVER_NAME,PORT # localhost,1433 for example
+DB_NAME= YOUR_DB_NAME
 DB_USER=YOUR_DB_USERNAME
 DB_PASSWORD=YOUR_DB_PASSWORD
 ```
 ##### inside the folder with projject file(where the window forms and stuff are) and # SQL Server 
 
-### `.env` File 2 (Root Folder - Docker)(Can change if you want)
+### `.env` File 2 (Root Folder - Docker)
 ```
 SA_PASSWORD=YOUR_STRONG_SA_PASSWORD
 ACCEPT_EULA=Y
-DB_PORT=1433
-CONTAINER_NAME=hardwareappsqlserver
-DB_NAME=HardwareDB
+DB_PORT=YOUR_DB_PORT # 1433 for example
+CONTAINER_NAME= YOUR_CONTAINER_NAME
+DB_NAME= YOUR_DB_NAME
 ```
 ##### Is at the root where sln file is and the other stuff -->🚀 Hardware Management System
 
