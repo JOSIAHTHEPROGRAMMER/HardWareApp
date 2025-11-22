@@ -1,9 +1,10 @@
 FROM mcr.microsoft.com/mssql/server:2022-latest
 
-# Install SQL Server command-line tools
 USER root
+
+# Install SQL Server CLI tools
 RUN apt-get update && \
-    apt-get install -y curl apt-transport-https gnupg && \
+    apt-get install -y curl apt-transport-https gnupg gettext-base && \
     curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - && \
     curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list > /etc/apt/sources.list.d/mssql-release.list && \
     apt-get update && \
@@ -12,9 +13,7 @@ RUN apt-get update && \
     ln -s /opt/mssql-tools/bin/sqlcmd /usr/bin/sqlcmd && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy SQL initialization script and entrypoint
-COPY init-database.sql /init-database.sql
 COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-# Use sh to run entrypoint
 ENTRYPOINT ["sh", "/entrypoint.sh"]

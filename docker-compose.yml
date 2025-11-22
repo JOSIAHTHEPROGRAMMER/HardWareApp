@@ -1,14 +1,17 @@
 ﻿services:
   db:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    build: .
     container_name: ${CONTAINER_NAME}
     ports:
       - "${DB_PORT}:1433"
     environment:
       SA_PASSWORD: ${SA_PASSWORD}
       ACCEPT_EULA: ${ACCEPT_EULA}
+      DB_NAME: ${DB_NAME}       
     volumes:
       - sql_data:/var/opt/mssql
+      - ./init-database.sql:/init-database.sql
+      - ./entrypoint.sh:/entrypoint.sh
     restart: always
 
 volumes:
