@@ -75,24 +75,6 @@ The project includes Docker support, allowing automatic SQL Server setup and dat
 - Splash screen
 - Consistent form navigation
 
-## 📂 Project Structure
-```
-HardWareApp/
-│── Billings.cs
-│── Categories.cs
-│── Customers.cs
-│── Items.cs
-│── Login.cs
-│── Splash.cs
-│── Functions.cs
-│── init-database.sql
-│── Dockerfile
-│── docker-compose.yml
-│── entrypoint.sh
-│── HardWareApp.sln
-└── Resources/
-```
-
 ## 🖼 Screenshots
 
 | 🔑 Login Screen | 📦 Items Management | 👥 Customers |
