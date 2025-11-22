@@ -26,5 +26,15 @@ namespace HardWareApp
         {
 
         }
+
+        private void guna2CirclePictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CircleProgressBar1_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

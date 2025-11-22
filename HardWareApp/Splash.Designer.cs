@@ -36,12 +36,12 @@
             label1 = new Label();
             guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             guna2CircleProgressBar1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // guna2Elipse1
@@ -63,7 +63,7 @@
             // guna2CirclePictureBox1
             // 
             guna2CirclePictureBox1.ImageRotate = 0F;
-            guna2CirclePictureBox1.Location = new Point(227, 107);
+            guna2CirclePictureBox1.Location = new Point(232, 65);
             guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -77,7 +77,7 @@
             guna2CircleProgressBar1.FillColor = Color.White;
             guna2CircleProgressBar1.Font = new Font("Segoe UI", 12F);
             guna2CircleProgressBar1.ForeColor = Color.White;
-            guna2CircleProgressBar1.Location = new Point(227, 107);
+            guna2CircleProgressBar1.Location = new Point(232, 65);
             guna2CircleProgressBar1.Minimum = 0;
             guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
             guna2CircleProgressBar1.ShadowDecoration.CustomizableEdges = customizableEdges1;
@@ -85,14 +85,6 @@
             guna2CircleProgressBar1.Size = new Size(196, 196);
             guna2CircleProgressBar1.TabIndex = 2;
             guna2CircleProgressBar1.Text = "guna2CircleProgressBar1";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Location = new Point(470, 163);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(8, 8);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -104,12 +96,20 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(470, 163);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(8, 8);
+            pictureBox2.TabIndex = 3;
+            pictureBox2.TabStop = false;
+            // 
             // Splash
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 70, 255);
-            ClientSize = new Size(636, 375);
+            ClientSize = new Size(632, 305);
             Controls.Add(pictureBox2);
             Controls.Add(guna2CircleProgressBar1);
             Controls.Add(guna2CirclePictureBox1);
@@ -124,8 +124,8 @@
             Load += Splash_Load;
             ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
             guna2CircleProgressBar1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
