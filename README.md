@@ -131,7 +131,7 @@ DB_NAME= YOUR_DB_NAME
 DB_USER=YOUR_DB_USERNAME
 DB_PASSWORD=YOUR_DB_PASSWORD
 ```
-##### inside the folder with projject file(where the window forms and stuff are) and # SQL Server 
+##### inside the folder with project files(where the window forms and other program files ) and # SQL Server 
 
 ### `.env` File 2 (Root Folder - Docker)
 ```
@@ -141,7 +141,7 @@ DB_PORT=YOUR_DB_PORT # 1433 for example
 CONTAINER_NAME= YOUR_CONTAINER_NAME
 DB_NAME= YOUR_DB_NAME
 ```
-##### Is at the root where sln file is and the other stuff -->🚀 Hardware Management System
+##### At the root of the project where the sln and the other Docker files are -->🚀 Hardware Management System
 
 ## 🧩 Database Init Script (`init-database.sql`)
 
